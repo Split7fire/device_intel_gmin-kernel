@@ -1,0 +1,10 @@
+commit f98a2c87a21d4636d329a02e8ae986d4616795b7
+Author: Petre Pircalabu <petre.ovidiu.pircalabu@intel.com>
+Date:   Tue Nov 25 20:01:03 2014 +0200
+
+    01org: update quilt series
+    
+    Add 01org specific patches to the gmin quilt series.
+    
+    Change-Id: Icdbdc7a2675e8c91dd5992af9c8ec304e7191d3c
+    Signed-off-by: Petre Pircalabu <petre.ovidiu.pircalabu@intel.com>
