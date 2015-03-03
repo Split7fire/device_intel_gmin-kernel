@@ -1,10 +1,11 @@
-commit f98a2c87a21d4636d329a02e8ae986d4616795b7
+commit 5152b2236cd8b3c3af4d3d937636710668b9fbdd
 Author: Petre Pircalabu <petre.ovidiu.pircalabu@intel.com>
-Date:   Tue Nov 25 20:01:03 2014 +0200
+Date:   Fri Feb 13 14:43:03 2015 +0200
 
-    01org: update quilt series
+    01org: Remove i386 configuration
     
-    Add 01org specific patches to the gmin quilt series.
+    Remove the i386 configuration and it's corresponding reference from the
+    build shell script as it is no longer maintained.
     
-    Change-Id: Icdbdc7a2675e8c91dd5992af9c8ec304e7191d3c
+    Change-Id: Id6c12b065297632b0b1f4f1b8798fa8577b4da52
     Signed-off-by: Petre Pircalabu <petre.ovidiu.pircalabu@intel.com>
