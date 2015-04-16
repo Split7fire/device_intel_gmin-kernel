@@ -1,10 +1,15 @@
-commit bb7293f095ff249bfa8f4bdb82b1065be71124b8
+commit 56e526e5aeea8ded272e53ba8b7473feaf7b7819
 Author: Petre Pircalabu <petre.ovidiu.pircalabu@intel.com>
-Date:   Tue Nov 25 20:01:03 2014 +0200
+Date:   Thu Apr 16 20:35:39 2015 +0300
 
-    01org: update quilt series
+    REVERTME: Restore hdmi-audio registration on byt_audio_platform_init
     
-    Add 01org specific patches to the gmin quilt series.
+    The call to platform_device_register_simple was moved from
+    byt_audio_platform_init to the snd_intel_sst driver, which is not used
+    on all Baytrail platforms (e.g. Minnowboard MAX uses the snd_hda_intel
+    driver)
     
-    Change-Id: Icdbdc7a2675e8c91dd5992af9c8ec304e7191d3c
+    Change-Id: I48d746f4a3d4cf1d24559be306b20b3bcd7b5f80
+    Tracked-By: A01-45
+    Tracked-On: https://jira01.devtools.intel.com/browse/A01-41
     Signed-off-by: Petre Pircalabu <petre.ovidiu.pircalabu@intel.com>
