@@ -1,15 +1,9 @@
-commit 56e526e5aeea8ded272e53ba8b7473feaf7b7819
+commit 0fd2487c0ba3c42e14877aa28d29ffa2f24fdc51
 Author: Petre Pircalabu <petre.ovidiu.pircalabu@intel.com>
-Date:   Thu Apr 16 20:35:39 2015 +0300
+Date:   Thu May 7 21:44:40 2015 +0300
 
-    REVERTME: Restore hdmi-audio registration on byt_audio_platform_init
+    Fix USB338x driver crash when connected to a SS USB port.
     
-    The call to platform_device_register_simple was moved from
-    byt_audio_platform_init to the snd_intel_sst driver, which is not used
-    on all Baytrail platforms (e.g. Minnowboard MAX uses the snd_hda_intel
-    driver)
-    
-    Change-Id: I48d746f4a3d4cf1d24559be306b20b3bcd7b5f80
-    Tracked-By: A01-45
-    Tracked-On: https://jira01.devtools.intel.com/browse/A01-41
+    Change-Id: Iebb4f867123431955b1f6256da34ef6b4573ba68
+    Tracked-On: https://jira01.devtools.intel.com/browse/A01-59
     Signed-off-by: Petre Pircalabu <petre.ovidiu.pircalabu@intel.com>
