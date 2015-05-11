@@ -1,9 +1,13 @@
-commit 0fd2487c0ba3c42e14877aa28d29ffa2f24fdc51
+commit 85c4a7306116568ef1655cff455a789627551299
 Author: Petre Pircalabu <petre.ovidiu.pircalabu@intel.com>
-Date:   Thu May 7 21:44:40 2015 +0300
+Date:   Mon May 11 14:00:48 2015 +0300
 
-    Fix USB338x driver crash when connected to a SS USB port.
+    usb: gadget: net2280: Fix crash in net2280_enable
     
-    Change-Id: Iebb4f867123431955b1f6256da34ef6b4573ba68
+    If net2280_enable exits still having the interrupts disabled, the board
+    freezes. Make sure the function calls spin_unlock_irqrestore before
+    exiting.
+    
+    Change-Id: I990eb36d8280187a0659498b0319cad84cc77887
     Tracked-On: https://jira01.devtools.intel.com/browse/A01-59
     Signed-off-by: Petre Pircalabu <petre.ovidiu.pircalabu@intel.com>
