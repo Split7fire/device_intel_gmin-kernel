@@ -1,14 +1,16 @@
-commit 3191822f78124e29cec42715641b11610cca6395
-Author: Mihai Serban <mihai.serban@intel.com>
-Date:   Mon May 18 16:29:13 2015 +0300
+commit 45096dc106b8ee31dbe36b0f28f2eb65f798f6a1
+Author: Petre Pircalabu <petre.ovidiu.pircalabu@intel.com>
+Date:   Wed Aug 12 17:17:43 2015 +0300
 
-    ipv4: Missing sk_nulls_node_init() in ping_unhash()
+    REVERTME: drm:i915 Force Analog Display Port init
     
-    CVE-2015-3636
-    A use-after-free vulnerability in the Linux kernel's handling of
-    ping sockets can lead to arbitrary code execution in the kernel.
-    The patch adds a missing sk_nulls_node_init() call in ping_unhash().
+    The HDMI audio is not working after the Minnowboard MAX firmware was
+    updated to support dual-HDMI output.
+    Calling intel_crt_init regardless of whether or not the Analog
+    Display Port is supported in the VBT table forces the HDMI
+    connector to use pipe B instead of pipe A.
     
-    Change-Id: I771f71a0495004d240bb5d7f8bc02671d1a4b736
-    Tracked-On: https://jira01.devtools.intel.com/browse/A01-72
-    Signed-off-by: Mihai Serban <mihai.serban@intel.com>
+    Change-Id: I95856920a842e8568ae09e967338d3e80fe44b99
+    Tracked-On: https://jira01.devtools.intel.com/browse/A01-102
+    Tracked-by: A01-105@jira01.devtools.intel.com
+    Signed-off-by: Petre Pircalabu <petre.ovidiu.pircalabu@intel.com>
