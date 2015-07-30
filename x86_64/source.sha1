@@ -1,11 +1,14 @@
-commit 5152b2236cd8b3c3af4d3d937636710668b9fbdd
+commit f718c563557988e38060010cf2a35c4e4a99e157
 Author: Petre Pircalabu <petre.ovidiu.pircalabu@intel.com>
-Date:   Fri Feb 13 14:43:03 2015 +0200
+Date:   Mon Jul 13 11:09:32 2015 +0300
 
-    01org: Remove i386 configuration
+    REVERTME: drm:i915 Set up the display config using the VBT
     
-    Remove the i386 configuration and it's corresponding reference from the
-    build shell script as it is no longer maintained.
+    Set up the display configuration according to VBT also for Valleyview.
+    This will make sure if multiple outputs are supported, they will all be
+    correcly initialized.
     
-    Change-Id: Id6c12b065297632b0b1f4f1b8798fa8577b4da52
+    Change-Id: Iaf19d84eb0c699a4b8cab776dffb91c9d950979c
+    Tracked-On: https://jira01.devtools.intel.com/browse/A01-102
+    Tracked-by: A01-105@jira01.devtools.intel.com
     Signed-off-by: Petre Pircalabu <petre.ovidiu.pircalabu@intel.com>
